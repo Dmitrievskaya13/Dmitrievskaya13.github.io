@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пробежка</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ЭТОТ БЛОК ЗАНИМАЕТ ВСЮ ВЫСОТУ ЭКРАНА */
+        .first-screen {
+            height: 100vh;           /* 100% высоты экрана */
+            display: flex;           /* включаем flexbox */
+            justify-content: center; /* выравниваем по центру по горизонтали */
+            align-items: center;     /* выравниваем по центру по вертикали */
+            background-color: #112d4e;
+            flex-direction: column;  /* чтобы заголовок и подзаголовок были друг под другом */
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #f9f7f7;
+            margin: 0;
+        }
+
+        .sub {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        h2 {
+    margin-bottom: 0;   /* убираем отступ СНИЗУ у заголовка */
+        }
+
+        .small-text {
+    font-size: 0.9rem;      /* текст поменьше */
+    color: #7f8c8d;          /* серый цвет */
+    margin-top: -10px;       /* притягиваем ближе к заголовку */
+        }
+        /* А ЭТО УЖЕ ОБЫЧНЫЙ ТЕКСТ, КОТОРЫЙ БУДЕТ ВНИЗУ */
+        .content {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- ПЕРВЫЙ ЭКРАН — ЗАГОЛОВОК ПО ЦЕНТРУ -->
+    <div class="first-screen">
+        <h1>ПРИГЛАШЕНИЕ НА ПРОБЕЖКУ</h1>
+        <div class="sub">Ты + я + больные колени = -`♡´- </div>
+    </div>
+
+    <!-- ДАЛЬШЕ ИДЁТ ТЕКСТ, КОТОРЫЙ ЛИСТАЕТСЯ -->
+    <div class="content">
+
+        <h2>Дорогая, Сабрина*! </h2>
+        <p class="small-text">*она же староста Дыленок, подставка для деда, саня опер</p>
+
+        <p>
+            Я решила, что нам очень не хватает физической активности в жизни<br>
+            Поэтому теперь мы будем бегать по утрам и делать силовые тренировки) 
+        </p>
+
+        <p>
+            Если на данный момент тебе всё ещё не нравится эта идея <br>
+            То у меня есть аргументы!!!!
+        </p>
+
+        <img src="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Бег в парке">
+
+        <h2>Детали</h2>
+
+        <ul>
+            <li>📅 Когда: завтра в 7:00</li>
+            <li>📍 Где: парк «Зелёный», центральный вход</li>
+            <li>🎯 Сколько: 3 км (в удовольствие)</li>
+            <li>☕ После: кофе и завтрак</li>
+        </ul>
+
+        <p style="text-align: center; font-size: 1.3rem;">
+            <strong>Ну что, бежим? 🏃‍♀️</strong>
+        </p>
+
+    </div>
+
+</body>
+</html>
